@@ -2,7 +2,7 @@
 > Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 Author: Amin Haghighatbin - 2022<br />
 >
-> Srltool is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/Receive directories and files, Make/Remove directories and files, details about the memory usage and availabe space on flash are examples of the features already been included in the tool. Srltool was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
+> "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and availabe space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
 >
 > Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 >
@@ -24,9 +24,9 @@ Author: Amin Haghighatbin - 2022<br />
 > - tree                Lists the content of the specified directory in Tree format.<br />
 
 ## Installation 
-
+- clone the repository
 [sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
-sudo python setup.py develop
+- sudo python setup.py develop
 
 
 ## Usage
@@ -112,7 +112,7 @@ srltool rmdir --help<br />
 ### [sendfile]
 Sends the specified file [filename_to_send] and will save as the specified file [filename_to_save].
 If the [filename_to_save] has not been specified as an argument, then the same name as the [filename_to_get] will be designated to save the file.<br />
-[buffer_size] argument may also be passed to adjust the size of the buffers to be transferred over serial; the default value is 32.<br />
+[buffer_size] argument may also be passed to adjust the size of the buffers to be transferred over serial; the default value is 32 bytes.<br />
 The [--forced or -f] option can be passed to over-write the exisitng file, please be cautious!<br />
 
 Examples:<br />
@@ -126,7 +126,7 @@ srltool send-file --help<br />
 ---
 ### [senddir] 
 Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].<br />
-If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. <br />The [--forced or -f] option can be passed to over-write the exisitng folder and all its included files, please be cautious!
+If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. <br />The [--forced or -f] option can be passed to overwrite the exisitng folder and all its included files, please be cautious!
 
 Examples:<br />
 srltool send-dir [dirname_to_send] [dirname_to_save]<br />
