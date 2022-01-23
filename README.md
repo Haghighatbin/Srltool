@@ -1,8 +1,8 @@
 
 
 ## Srltool
-Author: Amin Haghighatbin - 2022 
-Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device 
+Author: Amin Haghighatbin - 2022\n 
+Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device\n 
 
 Srltool is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/Receive directories and files, Make/Remove directories and files, details about the memory usage and availabe space on flash are examples of the features already been included in the tool. Srltool was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.
 
@@ -12,22 +12,22 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:
-  ls          Lists the content of the specified directory.
-  mkdir       Creates the specified directory.
-  recv-dir    Receives the specified directory.
-  recv-file   Receives the specified file.
-  rmdir       Removes the specified directory.
-  rmfile      Removes the specified file.
-  send-dir    Sends the specified directory
-  send-file   Sends the specified file.
-  stat_flash  Returns the details of allocated and available flash space.
-  stat_mem    Returns the memory status of the device.
-  stats       Returns the overall flash size details and memory status.
-  tree        Lists the content of the specified directory in Tree format.
+  ls          Lists the content of the specified directory.\n
+  mkdir       Creates the specified directory.\n
+  recv-dir    Receives the specified directory.\n
+  recv-file   Receives the specified file.\n
+  rmdir       Removes the specified directory.\n
+  rmfile      Removes the specified file.\n
+  send-dir    Sends the specified directory\n
+  send-file   Sends the specified file.\n
+  stat_flash  Returns the details of allocated and available flash space.\n
+  stat_mem    Returns the memory status of the device.\n
+  stats       Returns the overall flash size details and memory status.\n
+  tree        Lists the content of the specified directory in Tree format.\n
 
 ## Installation 
 
-[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line
+[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line\n
 sudo python setup.py develop
 
 ## Usage
@@ -35,11 +35,11 @@ sudo python setup.py develop
 # ls
 Lists the content of the specified directory.
 
-Examples:
-srltool ls
-or 
-srltool ls [directory]
-srltool ls --help
+Examples:\n
+srltool ls\n
+or\n
+srltool ls [directory]\n
+srltool ls --help\n
 
 # tree
 Lists the content of the specified directory in a Tree format.
