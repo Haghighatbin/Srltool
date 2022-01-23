@@ -10,7 +10,7 @@ Author: Amin Haghighatbin - 2022<br />
 >  -h, --help  Show this message and exit.
 >
 > Commands:<br />
-> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;    Lists the content of the specified directory.<br />
+> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;    Lists the content of the specified directory.<br />
 > - mkdir&emsp;&emsp;&emsp;&emsp;       Creates the specified directory.<br />
 > - recv-dir&emsp;&emsp;&emsp;&emsp;    Receives the specified directory.<br />
 > - recv-file&emsp;&emsp;&emsp;&emsp;   Receives the specified file.<br />
@@ -28,6 +28,7 @@ Author: Amin Haghighatbin - 2022<br />
 [sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
 sudo python setup.py develop
 
+---
 ## Usage
 
 #### [ls] 
@@ -38,6 +39,7 @@ srltool ls<br />
 or<br />
 srltool ls [directory]<br />
 srltool ls --help<br />
+
 ---
 #### [tree]
 Lists the content of the specified directory in a Tree format.<br />
@@ -49,6 +51,7 @@ srltool tree [folder]<br />
 or <br />
 srltool tree --show-hidden --dir-only<br />
 srltool tree --help<br />
+
 ---
 #### [stat_mem]
 Returns the memory status of the device.<br />
@@ -56,6 +59,7 @@ Returns the memory status of the device.<br />
 Example:<br />
 srltool stat_mem<br />
 srltool stat_mem --help<br />
+
 ---
 #### [stat_flash]
 Returns details of the allocated and available flash space.<br />
@@ -63,6 +67,7 @@ Returns details of the allocated and available flash space.<br />
 Example:<br />
 srltool stat_flash<br />
 srltool stat_flash --help<br />
+
 ---
 #### [stats]
 Returns the overall flash size details and memory stauts.<br />
@@ -70,6 +75,7 @@ Returns the overall flash size details and memory stauts.<br />
 Example:<br />
 srltool stats<br />
 srltool stats --help<br />
+
 ---
 #### [mkdir]
 Creates the specified directory.<br />
@@ -80,6 +86,7 @@ srltool mkdir [directory_to_create]<br />
 or<br />
 srltool mkdir [directory_to_create] --ignore-if-exists<br /> 
 srltool mkdir --help<br />
+
 ---
 # [rmfile]
 Removes the specified file without further notice, please be cautious!<br />
@@ -87,6 +94,7 @@ Removes the specified file without further notice, please be cautious!<br />
 Example:<br />
 srltool rmfile [file_to_delete]<br />
 srltool rmfile --help<br />
+
 ---
 # [rmdir]
 Removes the specified directory.<br />
@@ -98,6 +106,7 @@ srltool rmdir [dir_to_delete]<br />
 or<br />
 srltool rmdir [dir_to_delete] --forced<br />
 srltool rmdir --help<br />
+
 ---
 # [sendfile]
 Sends the specified file [filename_to_send] and will save as the specified file [filename_to_save].
@@ -112,6 +121,7 @@ srltool send-file [filename_to_send] <br />
 or<br />
 srltool send-file [filename_to_send] --forced buffer_size=128<br />
 srltool send-file --help<br />
+
 ---
 # [senddir] 
 Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].
@@ -124,6 +134,7 @@ srltool send-dir [dirname_to_send]<br />
 or<br />
 srltool send-dir [dirname_to_send] --forced<br />
 srltool send-dir --help<br />
+
 ---
 # [recvfile]
 Receives the specified file [filename_to_get] and will save as the specified file [filename_to_save].
@@ -140,6 +151,7 @@ srltool recv-file [filename_to_get] check_exist=True buffer_size=64<br />
 or<br />
 srltool recv-file [filename_to_get] [filename_to_save]<br />
 srltool recv-file --help<br />
+
 ---
 # [recvdir]
 Receives the specified directory [dirname_to_get] and its included files and will save in the specified directory [dirname_to_save].
@@ -150,6 +162,7 @@ srltool recv-dir dirname_to_get dirname_to_save<br />
 or<br />
 srltool recv-dir dirname_to_get<br />
 srltool recv-dir --help<br />
+
 ---
 # [astroid] 
 Requests a list of coordinates and will plot an astroid as a serial test.
@@ -161,6 +174,7 @@ srltool astroid [iterations]<br />
 or <br />
 srltool astroid 10<br />
 srltool astroid --help<br />
+
 ---
 ## To-do
 ESP32 compatibility
