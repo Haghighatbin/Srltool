@@ -1,6 +1,6 @@
 
 
-## Srltool
+# Srltool
 Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 Author: Amin Haghighatbin - 2022<br />
 
@@ -32,7 +32,7 @@ sudo python setup.py develop
 
 ## Usage
 
-<b> ls <b\>
+#### ls 
 Lists the content of the specified directory.
 
 Examples:<br />
@@ -41,7 +41,7 @@ or<br />
 srltool ls [directory]<br />
 srltool ls --help<br />
 
-# tree
+#### tree
 Lists the content of the specified directory in a Tree format.<br />
 
 Examples:<br />
@@ -52,28 +52,28 @@ or <br />
 srltool tree --show-hidden --dir-only<br />
 srltool tree --help<br />
  
-# stat_mem
+#### stat_mem
 Returns the memory status of the device.<br />
 
 Example:<br />
 srltool stat_mem<br />
 srltool stat_mem --help<br />
 
-# stat_flash
+#### stat_flash
 Returns details of the allocated and available flash space.<br />
 
 Example:<br />
 srltool stat_flash<br />
 srltool stat_flash --help<br />
 
-# stats
+#### stats
 Returns the overall flash size details and memory stauts.<br />
 
 Example:<br />
 srltool stats<br />
 srltool stats --help<br />
 
-# mkdir
+#### mkdir
 Creates the specified directory.<br />
 The [--ignore-if-exists] option if passed then if the directory exists will be preserved without deletion.<br />
 
