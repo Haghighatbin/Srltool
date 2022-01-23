@@ -10,8 +10,8 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:<br />
-  -ls&emsp    Lists the content of the specified directory.<br />
-  mkdir       Creates the specified directory.<br />
+- ls          Lists the content of the specified directory.<br />
+- mkdir       Creates the specified directory.<br />
   recv-dir    Receives the specified directory.<br />
   recv-file   Receives the specified file.<br />
   rmdir       Removes the specified directory.<br />
