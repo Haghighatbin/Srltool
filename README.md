@@ -1,9 +1,9 @@
 # Srltool
 > Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
-Author: Amin Haghighatbin - 2022<br />
+Author: Amin Haghighatbin (2022)<br />
 >
 > "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and availabe space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
->
+> 
 > Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 >
 > Options:
@@ -11,17 +11,17 @@ Author: Amin Haghighatbin - 2022<br />
 > <pre>
 > Commands:<br />
 > - ls                  Lists the content of the specified directory.
-> - mkdir               Creates the specified directory.<br />
+> - mkdir               Creates the specified directory.
 > - recv-dir            Receives the specified directory.
-> - recv-file           Receives the specified file.<br />
-> - rmdir               Removes the specified directory.<br />
-> - rmfile              Removes the specified file.<br />
-> - send-dir            Sends the specified directory.<br />
-> - send-file           Sends the specified file.<br />
-> - stat_flash          Returns the details of allocated and available flash space.<br />
-> - stat_mem            Returns the memory status of the device.<br />
-> - stats               Returns the overall flash size details and memory status.<br />
-> - tree                Lists the content of the specified directory in Tree format.<br />
+> - recv-file           Receives the specified file.
+> - rmdir               Removes the specified directory.
+> - rmfile              Removes the specified file.
+> - send-dir            Sends the specified directory.
+> - send-file           Sends the specified file.
+> - stat_flash          Returns the details of allocated and available flash space.
+> - stat_mem            Returns the memory status of the device.
+> - stats               Returns the overall flash size details and memory status.
+> - tree                Lists the content of the specified directory in Tree format.
 
 ## Installation 
 - clone the repository
