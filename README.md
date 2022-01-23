@@ -10,8 +10,8 @@ Author: Amin Haghighatbin - 2022<br />
 >  -h, --help  Show this message and exit.
 >
 > Commands:<br />
-> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&ensp;   Lists the content of the specified directory.<br />
-> - mkdir&emsp;&emsp;&emsp;&emsp;&ensp;    Creates the specified directory.<br />
+> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&ensp; &nbsp;  Lists the content of the specified directory.<br />
+> - mkdir&emsp;&emsp;&emsp;&emsp;&ensp;  &nbsp;  Creates the specified directory.<br />
 > - recv-dir&emsp;&emsp;&emsp;&emsp;    Receives the specified directory.<br />
 > - recv-file&emsp;&emsp;&emsp;&emsp;   Receives the specified file.<br />
 > - rmdir&emsp;&emsp;&emsp;&emsp;&ensp;       Removes the specified directory.<br />
@@ -177,5 +177,5 @@ srltool astroid --help<br />
 
 ---
 ## To-do
-ESP32 compatibility
+* ESP32 compatibility
 
