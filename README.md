@@ -31,7 +31,7 @@ sudo python setup.py develop
 ---
 ## Usage
 
-#### [ls] 
+#### [ls]
 Lists the content of the specified directory.
 
 Examples:<br />
