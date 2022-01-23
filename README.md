@@ -1,8 +1,8 @@
 
 
 ## Srltool
-Author: Amin Haghighatbin - 2022<br />
 Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
+Author: Amin Haghighatbin - 2022<br />
 
 Srltool is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/Receive directories and files, Make/Remove directories and files, details about the memory usage and availabe space on flash are examples of the features already been included in the tool. Srltool was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
 
@@ -11,7 +11,7 @@ Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 Options:
   -h, --help  Show this message and exit.
 
-Commands:
+Commands:<br />
   ls          Lists the content of the specified directory.<br />
   mkdir       Creates the specified directory.<br />
   recv-dir    Receives the specified directory.<br />
@@ -35,45 +35,45 @@ sudo python setup.py develop
 # ls
 Lists the content of the specified directory.
 
-Examples:\n
-srltool ls\n
-or\n
-srltool ls [directory]\n
-srltool ls --help\n
+Examples:<br />
+srltool ls<br />
+or<br />
+srltool ls [directory]<br />
+srltool ls --help<br />
 
 # tree
-Lists the content of the specified directory in a Tree format.
-Examples:
-srltool tree
-or 
-srltool tree [folder]
-or 
-srltool tree --show-hidden --dir-only
-srltool tree --help
+Lists the content of the specified directory in a Tree format.<br />
+Examples:<br />
+srltool tree<br />
+or <br />
+srltool tree [folder]<br />
+or <br />
+srltool tree --show-hidden --dir-only<br />
+srltool tree --help<br />
  
 # stat_mem
-Returns the memory status of the device.
+Returns the memory status of the device.<br />
 
-Example:
-srltool stat_mem
-srltool stat_mem --help
+Example:<br />
+srltool stat_mem<br />
+srltool stat_mem --help<br />
 
 # stat_flash
-Returns details of the allocated and available flash space.
+Returns details of the allocated and available flash space.<br />
 
-Example:
-srltool stat_flash
-srltool stat_flash --help
+Example:<br />
+srltool stat_flash<br />
+srltool stat_flash --help<br />
 
 # stats
-Returns the overall flash size details and memory stauts.
+Returns the overall flash size details and memory stauts.<br />
 
-Example:
-srltool stats
-srltool stats --help
+Example:<br />
+srltool stats<br />
+srltool stats --help<br />
 
 # mkdir
-Creates the specified directory.
+Creates the specified directory.<br />
 The [--ignore-if-exists] option if passed then if the directory exists will be preserved without deletion. 
 
 Example:
