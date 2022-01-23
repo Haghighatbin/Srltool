@@ -10,9 +10,9 @@ Author: Amin Haghighatbin - 2022<br />
 >  -h, --help  Show this message and exit.
 > <pre>
 > Commands:<br />
-> - ls                  Lists the content of the specified directory.<br />
+> - ls                  Lists the content of the specified directory.
 > - mkdir               Creates the specified directory.<br />
-> - recv-dir            Receives the specified directory.<br />
+> - recv-dir            Receives the specified directory.
 > - recv-file           Receives the specified file.<br />
 > - rmdir               Removes the specified directory.<br />
 > - rmfile              Removes the specified file.<br />
