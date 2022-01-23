@@ -173,6 +173,9 @@ or <br />
 srltool astroid 10<br />
 srltool astroid --help<br />
 
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+
 ---
 ## To-do
 * ESP32 compatibility
