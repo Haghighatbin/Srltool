@@ -8,9 +8,9 @@ Author: Amin Haghighatbin - 2022<br />
 >
 > Options:
 >  -h, --help  Show this message and exit.
->
+> <pre>
 > Commands:<br />
-> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&ensp; &nbsp;  Lists the content of the specified directory.<br />
+> - ls                  Lists the content of the specified directory.<br />
 > - mkdir               Creates the specified directory.<br />
 > - recv-dir            Receives the specified directory.<br />
 > - recv-file           Receives the specified file.<br />
