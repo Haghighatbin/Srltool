@@ -24,12 +24,11 @@ Author: Amin Haghighatbin (2022)<br />
 > - tree                Lists the content of the specified directory in Tree format.
 
 ## Installation 
-- clone the repository<br />
-- [sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
-- sudo python setup.py develop<br />
+[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
+sudo python setup.py develop<br />
 
 ## Usage
-
+Note: You might have to use the srltool under superuser priviliges(sudo).<br /> 
 ### [ls]
 Lists the content of the specified directory.
 
