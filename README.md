@@ -1,10 +1,10 @@
 
 
 ## Srltool
-Author: Amin Haghighatbin - 2022\n 
-Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device\n 
+Author: Amin Haghighatbin - 2022<br />
+Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 
-Srltool is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/Receive directories and files, Make/Remove directories and files, details about the memory usage and availabe space on flash are examples of the features already been included in the tool. Srltool was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.
+Srltool is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/Receive directories and files, Make/Remove directories and files, details about the memory usage and availabe space on flash are examples of the features already been included in the tool. Srltool was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
 
 Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 
@@ -12,18 +12,18 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:
-  ls          Lists the content of the specified directory.\n
-  mkdir       Creates the specified directory.\n
-  recv-dir    Receives the specified directory.\n
-  recv-file   Receives the specified file.\n
-  rmdir       Removes the specified directory.\n
-  rmfile      Removes the specified file.\n
-  send-dir    Sends the specified directory\n
-  send-file   Sends the specified file.\n
-  stat_flash  Returns the details of allocated and available flash space.\n
-  stat_mem    Returns the memory status of the device.\n
-  stats       Returns the overall flash size details and memory status.\n
-  tree        Lists the content of the specified directory in Tree format.\n
+  ls          Lists the content of the specified directory.<br />
+  mkdir       Creates the specified directory.<br />
+  recv-dir    Receives the specified directory.<br />
+  recv-file   Receives the specified file.<br />
+  rmdir       Removes the specified directory.<br />
+  rmfile      Removes the specified file.<br />
+  send-dir    Sends the specified directory.<br />
+  send-file   Sends the specified file.<br />
+  stat_flash  Returns the details of allocated and available flash space.<br />
+  stat_mem    Returns the memory status of the device.<br />
+  stats       Returns the overall flash size details and memory status.<br />
+  tree        Lists the content of the specified directory in Tree format.<br />
 
 ## Installation 
 
