@@ -28,7 +28,7 @@ Author: Amin Haghighatbin (2022)<br />
 sudo python setup.py develop<br />
 
 ## Usage
-Note: You might have to use the srltool under superuser priviliges(sudo).<br /> 
+Note: You might have to use the srltool under superuser privileges(sudo).<br /> 
 ### [ls]
 Lists the content of the specified directory.
 
