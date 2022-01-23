@@ -1,5 +1,3 @@
-
-
 # Srltool
 Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 Author: Amin Haghighatbin - 2022<br />
@@ -12,7 +10,7 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:<br />
-  ls          Lists the content of the specified directory.<br />
+  -ls&emsp    Lists the content of the specified directory.<br />
   mkdir       Creates the specified directory.<br />
   recv-dir    Receives the specified directory.<br />
   recv-file   Receives the specified file.<br />
