@@ -10,12 +10,12 @@ Author: Amin Haghighatbin - 2022<br />
 >  -h, --help  Show this message and exit.
 >
 > Commands:<br />
-> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;    Lists the content of the specified directory.<br />
-> - mkdir&emsp;&emsp;&emsp;&emsp;       Creates the specified directory.<br />
+> - ls&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&ensp;   Lists the content of the specified directory.<br />
+> - mkdir&emsp;&emsp;&emsp;&emsp;&ensp;    Creates the specified directory.<br />
 > - recv-dir&emsp;&emsp;&emsp;&emsp;    Receives the specified directory.<br />
 > - recv-file&emsp;&emsp;&emsp;&emsp;   Receives the specified file.<br />
-> - rmdir&emsp;&emsp;&emsp;&emsp;       Removes the specified directory.<br />
-> - rmfile&emsp;&emsp;&emsp;&emsp;      Removes the specified file.<br />
+> - rmdir&emsp;&emsp;&emsp;&emsp;&ensp;       Removes the specified directory.<br />
+> - rmfile&emsp;&emsp;&emsp;&emsp;&ensp;      Removes the specified file.<br />
 > - send-dir&emsp;&emsp;&emsp;&emsp;    Sends the specified directory.<br />
 > - send-file&emsp;&emsp;&emsp;&emsp;   Sends the specified file.<br />
 > - stat_flash&emsp;&emsp;&emsp;&emsp;  Returns the details of allocated and available flash space.<br />
