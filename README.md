@@ -10,18 +10,18 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:<br />
-- ls&emsp;       Lists the content of the specified directory.<br />
-- mkdir&emsp;       Creates the specified directory.<br />
-- recv-dir    Receives the specified directory.<br />
-- recv-file   Receives the specified file.<br />
-- rmdir       Removes the specified directory.<br />
-- rmfile      Removes the specified file.<br />
-- send-dir    Sends the specified directory.<br />
-- send-file   Sends the specified file.<br />
-- stat_flash  Returns the details of allocated and available flash space.<br />
-- stat_mem    Returns the memory status of the device.<br />
-- stats       Returns the overall flash size details and memory status.<br />
-- tree        Lists the content of the specified directory in Tree format.<br />
+- ls&emsp;&emsp;          Lists the content of the specified directory.<br />
+- mkdir&emsp;&emsp;       Creates the specified directory.<br />
+- recv-dir&emsp;&emsp;    Receives the specified directory.<br />
+- recv-file&emsp;&emsp;   Receives the specified file.<br />
+- rmdir&emsp;&emsp;       Removes the specified directory.<br />
+- rmfile&emsp;&emsp;      Removes the specified file.<br />
+- send-dir&emsp;&emsp;    Sends the specified directory.<br />
+- send-file&emsp;&emsp;   Sends the specified file.<br />
+- stat_flash&emsp;&emsp;  Returns the details of allocated and available flash space.<br />
+- stat_mem&emsp;&emsp;    Returns the memory status of the device.<br />
+- stats&emsp;&emsp;       Returns the overall flash size details and memory status.<br />
+- tree&emsp;&emsp;        Lists the content of the specified directory in Tree format.<br />
 
 ## Installation 
 
