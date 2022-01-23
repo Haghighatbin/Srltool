@@ -32,7 +32,7 @@ sudo python setup.py develop
 
 ## Usage
 
-# ls
+<b> ls <b\>
 Lists the content of the specified directory.
 
 Examples:<br />
@@ -113,7 +113,7 @@ or<br />
 srltool send-file [filename_to_send] <br />
 or<br />
 srltool send-file [filename_to_send] --forced buffer_size=128<br />
-srltool send-file --help<br /><br />
+srltool send-file --help<br />
 
 # senddir 
 Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].
