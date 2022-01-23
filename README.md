@@ -10,27 +10,27 @@ Author: Amin Haghighatbin - 2022<br />
 >  -h, --help  Show this message and exit.
 >
 > Commands:<br />
-> - ls&emsp;&emsp;&emsp;         Lists the content of the specified directory.<br />
-> - mkdir&emsp;&emsp;       Creates the specified directory.<br />
-> - recv-dir&emsp;&emsp;    Receives the specified directory.<br />
-> - recv-file&emsp;&emsp;   Receives the specified file.<br />
-> - rmdir&emsp;&emsp;       Removes the specified directory.<br />
-> - rmfile&emsp;&emsp;      Removes the specified file.<br />
-> - send-dir&emsp;&emsp;    Sends the specified directory.<br />
-> - send-file&emsp;&emsp;   Sends the specified file.<br />
-> - stat_flash&emsp;&emsp;  Returns the details of allocated and available flash space.<br />
-> - stat_mem&emsp;&emsp;    Returns the memory status of the device.<br />
-> - stats&emsp;&emsp;       Returns the overall flash size details and memory status.<br />
-> - tree&emsp;&emsp;        Lists the content of the specified directory in Tree format.<br />
+> - ls&emsp;&emsp;&emsp;&emsp;&emsp;    Lists the content of the specified directory.<br />
+> - mkdir&emsp;&emsp;&emsp;&emsp;       Creates the specified directory.<br />
+> - recv-dir&emsp;&emsp;&emsp;&emsp;    Receives the specified directory.<br />
+> - recv-file&emsp;&emsp;&emsp;&emsp;   Receives the specified file.<br />
+> - rmdir&emsp;&emsp;&emsp;&emsp;       Removes the specified directory.<br />
+> - rmfile&emsp;&emsp;&emsp;&emsp;      Removes the specified file.<br />
+> - send-dir&emsp;&emsp;&emsp;&emsp;    Sends the specified directory.<br />
+> - send-file&emsp;&emsp;&emsp;&emsp;   Sends the specified file.<br />
+> - stat_flash&emsp;&emsp;&emsp;&emsp;  Returns the details of allocated and available flash space.<br />
+> - stat_mem&emsp;&emsp;&emsp;&emsp;    Returns the memory status of the device.<br />
+> - stats&emsp;&emsp;&emsp;&emsp;       Returns the overall flash size details and memory status.<br />
+> - tree&emsp;&emsp;&emsp;&emsp;        Lists the content of the specified directory in Tree format.<br />
 ---
 ## Installation 
 
-[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />v
+[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
 sudo python setup.py develop
 
 ## Usage
 
-#### ls 
+#### [ls] 
 Lists the content of the specified directory.
 
 Examples:<br />
@@ -39,7 +39,7 @@ or<br />
 srltool ls [directory]<br />
 srltool ls --help<br />
 
-#### tree
+#### [tree]
 Lists the content of the specified directory in a Tree format.<br />
 
 Examples:<br />
@@ -50,28 +50,28 @@ or <br />
 srltool tree --show-hidden --dir-only<br />
 srltool tree --help<br />
  
-#### stat_mem
+#### [stat_mem]
 Returns the memory status of the device.<br />
 
 Example:<br />
 srltool stat_mem<br />
 srltool stat_mem --help<br />
 
-#### stat_flash
+#### [stat_flash]
 Returns details of the allocated and available flash space.<br />
 
 Example:<br />
 srltool stat_flash<br />
 srltool stat_flash --help<br />
 
-#### stats
+#### [stats]
 Returns the overall flash size details and memory stauts.<br />
 
 Example:<br />
 srltool stats<br />
 srltool stats --help<br />
 
-#### mkdir
+#### [mkdir]
 Creates the specified directory.<br />
 The [--ignore-if-exists] option if passed then if the directory exists will be preserved without deletion.<br />
 
@@ -81,14 +81,14 @@ or<br />
 srltool mkdir [directory_to_create] --ignore-if-exists<br /> 
 srltool mkdir --help<br />
 
-# rmfile
+# [rmfile]
 Removes the specified file without further notice, please be cautious!<br />
 
 Example:<br />
 srltool rmfile [file_to_delete]<br />
 srltool rmfile --help<br />
 
-# rmdir
+# [rmdir]
 Removes the specified directory.<br />
 If the [--forced or -f] option is passed then if the existed folder and all its contents including
 all files and subdirectories will be deleted recursively; the default flag is True, please be cautious!<br />
@@ -99,7 +99,7 @@ or<br />
 srltool rmdir [dir_to_delete] --forced<br />
 srltool rmdir --help<br />
 
-# sendfile
+# [sendfile]
 Sends the specified file [filename_to_send] and will save as the specified file [filename_to_save].
 If the [filename_to_save] has not been specified as an argument, then the same name as the [filename_to_get] will be designated to save the # file.
 buffer_size argument may also be passed to adjust the size of the buffers to be transferred over serial; the default value is 32;
@@ -113,7 +113,7 @@ or<br />
 srltool send-file [filename_to_send] --forced buffer_size=128<br />
 srltool send-file --help<br />
 
-# senddir 
+# [senddir] 
 Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].
 If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. The [--forced or -f] option can be passed to over-write the exisitng folder and all its included files, please be cautious!
 
@@ -125,7 +125,7 @@ or<br />
 srltool send-dir [dirname_to_send] --forced<br />
 srltool send-dir --help<br />
 
-# recvfile
+# [recvfile]
 Receives the specified file [filename_to_get] and will save as the specified file [filename_to_save].
 If the [filename_to_save] has not been specified as an argument,  then the same name as the [filename_to_get] will be designated to save the file.
 check_exist argument may be passed to check if the file exists; the default value is True;
@@ -141,7 +141,7 @@ or<br />
 srltool recv-file [filename_to_get] [filename_to_save]<br />
 srltool recv-file --help<br />
 
-# recvdir
+# [recvdir]
 Receives the specified directory [dirname_to_get] and its included files and will save in the specified directory [dirname_to_save].
 If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_get] will be designated to save the folder. <br />
     
@@ -151,7 +151,7 @@ or<br />
 srltool recv-dir dirname_to_get<br />
 srltool recv-dir --help<br />
 
-# astroid 
+# [astroid] 
 Requests a list of coordinates and will plot an astroid as a serial test.
 This module was written to assess the serial connection; it will request a list of coordinates to be generated by the STM32 device;
 The list will be returned and plotted.<br />
