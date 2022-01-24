@@ -24,7 +24,7 @@ Author: Amin Haghighatbin (2022)<br />
 > - tree                Lists the content of the specified directory in Tree format.
 
 ## Installation 
-[sudo pip install -r requirements.txt] -> not neccessary if installed with the next line<br />
+sudo pip install -r requirements.txt<br />
 sudo python setup.py develop<br />
 
 ## Usage
