@@ -2,7 +2,7 @@
 > Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 Author: Amin Haghighatbin (2022)<br />
 >
-> "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and availabe space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
+> "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and available space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
 > 
 > Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 >
@@ -34,10 +34,10 @@ Note: srltool will find the accessible port to the available stm32 device and co
 Lists the content of the specified directory.
 
 Examples:<br />
-srltool ls<br />
+`srltool ls`<br />
 or<br />
-srltool ls [directory]<br />
-srltool ls --help<br />
+`srltool ls [directory]`<br />
+`srltool ls --help`<br />
 
 ---
 ### [tree]
@@ -69,7 +69,7 @@ srltool stat_flash --help<br />
 
 ---
 ### [stats]
-Returns the overall flash size details and memory stauts.<br />
+Returns the overall flash size details and memory status.<br />
 
 Example:<br />
 srltool stats<br />
@@ -78,7 +78,7 @@ srltool stats --help<br />
 ---
 ### [mkdir]
 Creates the specified directory.<br />
-The [--ignore-if-exists] option if passed then if the directory exists will be preserved ignoting the deletion.<br />
+The [--ignore-if-exists] option if passed then if the directory exists will be preserved ignoring the deletion.<br />
 
 Example:<br />
 srltool mkdir [directory_to_create]<br />
@@ -112,7 +112,7 @@ srltool rmdir --help<br />
 Sends the specified file [filename_to_send] and will save as the specified file [filename_to_save].
 If the [filename_to_save] has not been specified as an argument, then the same name as the [filename_to_get] will be designated to save the file.<br />
 [buffer_size] argument may also be passed to adjust the size of the buffers to be transferred over serial; the default value is 32 bytes.<br />
-The [--forced or -f] option can be passed to over-write the exisitng file, please be cautious!<br />
+The [--forced or -f] option can be passed to over-write the existing file, please be cautious!<br />
 
 Examples:<br />
 srltool send-file [filename_to_send] [filename_to_save]<br />
@@ -125,7 +125,7 @@ srltool send-file --help<br />
 ---
 ### [senddir] 
 Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].<br />
-If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. <br />The [--forced or -f] option can be passed to overwrite the exisitng folder and all its included files, please be cautious!
+If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. <br />The [--forced or -f] option can be passed to overwrite the existing folder and all its included files, please be cautious!
 
 Examples:<br />
 srltool send-dir [dirname_to_send] [dirname_to_save]<br />
