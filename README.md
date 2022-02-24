@@ -28,7 +28,7 @@
 
 ## Usage
 Note: You might have to use the srltool under superuser privileges(sudo).<br /> 
-Note: srltool will find the accessible port to the available stm32 device and communicates over serial with a predefined baudrate of 115200<br />
+Note: srltool will find the accessible port to the available stm32 device and communicates over serial with a predefined baudrate of 115200.<br />
 ### [ls]
 Lists the content of the specified directory.
 
