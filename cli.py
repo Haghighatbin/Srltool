@@ -1,4 +1,4 @@
-# Serial tool 
+# Serial tool (srltool) - A tool to communicate with a Micropython-based STM32 device
 # Author: Amin Haghighatbin
 # Copyright 2022 - MIT License
 #
