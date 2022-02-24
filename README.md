@@ -1,6 +1,5 @@
 # Srltool
 > Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
-Author: Amin Haghighatbin (2022)<br />
 >
 > "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and available space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
 > 
