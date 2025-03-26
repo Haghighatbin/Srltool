@@ -73,35 +73,35 @@ def tree(path, show_hidden, dir_only) -> None:
     """
     _command.tree(path, show_hidden, dir_only)
 
-@cli.command('stat_mem')
+@cli.command('memstat')
 def mem_stat() -> str:
     """Returns the memory status of the device.
     \b
 
     Example:
 
-    srltool stat_mem
+    srltool memstat
     \f
     """
-    _command.mem_stat()
+    _command.memstat()
 
-@cli.command('stat_flash')
+@cli.command('flashstat')
 def flash_stat() -> str:
     """Returns the details of allocated and available flash space.
     \b
 
     Example:
 
-    srltool stat_flash
+    srltool flashstat
     \f
     """
-    _command.flash_stat()
+    _command.flashstat()
 
 @cli.command('stats')
 def overall_stat() -> str:
     """Returns the overall flash size details and memory status.
 
-    It essentially calls the mem_stat and flash_stat consecutively. 
+    It essentially calls the memstat and flashstat consecutively. 
     \b
 
     Example:
