@@ -1,7 +1,10 @@
-# Srltool
-> Serial Tool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
+# SerialTool – STM32 Serial Communication Utility
+> SerialTool (srltool) - A tool to communicate with a Micropython-based STM32 device<br />
 >
-> "srltool" is a simplified command-line tool to communicate with Micropython-based STM32 devices over serial connection. Send/receive directories and files, make/remove directories and files, details about the memory usage and available space on flash are examples of the features currently included in the tool. "srltool" was a personal project for personal use; please be cautious specifically while using features such rmdir/rmfile.<br />
+> "srltool" is a lightweight command-line tool to communicate with Micropython-based STM32 devices over serial (USB) connection.  It automatically detects connected STM32 devices, establishes a serial connection, and provides convenient methods to interact with the device using MicroPython's raw REPL interface. <br /><br />
+Current features include sending and receiving files/directories, creating and removing files or directories, and viewing memory usage and available flash space.<br /><br />
+> ⚠️ **Warning:** This tool was developed for personal use.  Exercise caution, especially with destructive commands like `rmdir` or `rmfile`.
+
 > 
 > Usage: cli.py [OPTIONS] COMMAND [ARGS]...
 >
@@ -17,8 +20,8 @@
 > - rmfile              Removes the specified file.
 > - send-dir            Sends the specified directory.
 > - send-file           Sends the specified file.
-> - stat_flash          Returns the details of allocated and available flash space.
-> - stat_mem            Returns the memory status of the device.
+> - flashstat           Returns the details of allocated and available flash space.
+> - memstat             Returns the memory status of the device.
 > - stats               Returns the overall flash size details and memory status.
 > - tree                Lists the content of the specified directory in Tree format.
 
@@ -27,9 +30,10 @@
 `sudo python setup.py develop`<br />
 
 ## Usage
-Note: You might have to use the srltool under superuser privileges(sudo).<br /> 
+Note: You might have to use the srltool under superuser/admin privileges(sudo).<br /> 
 Note: srltool will find the accessible port to the available stm32 device and communicates over serial with a predefined baudrate of 115200.<br />
-### [ls]
+
+### $${\color{blue}[ls]}$$
 Lists the content of the specified directory.
 
 Examples:<br />
@@ -39,7 +43,7 @@ or<br />
 `srltool ls --help`<br />
 
 ---
-### [tree]
+### $${\color{blue}[tree]}$$
 Lists the content of the specified directory in a Tree format.<br />
 
 Examples:<br />
@@ -51,23 +55,23 @@ or <br />
 `srltool tree --help`<br />
 
 ---
-### [stat_mem]
+### $${\color{blue}[memstat]}$$
 Returns the memory status of the device.<br />
 
 Example:<br />
-`srltool stat_mem`<br />
-`srltool stat_mem --help`<br />
+`srltool memstat`<br />
+`srltool memstat --help`<br />
 
 ---
-### [stat_flash]
+### $${\color{blue}[flashstat]}$$
 Returns details of the allocated and available flash space.<br />
 
 Example:<br />
-`srltool stat_flash`<br />
-`srltool stat_flash --help`<br />
+`srltool flashstat`<br />
+`srltool flashstat --help`<br />
 
 ---
-### [stats]
+### $${\color{blue}[stats]}$$
 Returns the overall flash size details and memory status.<br />
 
 Example:<br />
@@ -75,7 +79,7 @@ Example:<br />
 `srltool stats --help`<br />
 
 ---
-### [mkdir]
+### $${\color{blue}[mkdir]}$$
 Creates the specified directory.<br />
 The [--ignore-if-exists] option if passed then if the directory exists will be preserved ignoring the deletion.<br />
 
@@ -86,7 +90,7 @@ or<br />
 `srltool mkdir --help`<br />
 
 ---
-### [rmfile]
+### $${\color{blue}[rmfile]}$$
 Removes the specified file without further notice, please be cautious!<br />
 
 Example:<br />
@@ -94,7 +98,7 @@ Example:<br />
 `srltool rmfile --help`<br />
 
 ---
-### [rmdir]
+### $${\color{blue}[rmdir]}$$
 Removes the specified directory.<br />
 If the [--forced or -f] option is passed then if the existed folder and all its contents including
 all files and subdirectories will be deleted recursively.<br /> 
@@ -107,11 +111,11 @@ or<br />
 `srltool rmdir --help`<br />
 
 ---
-### [sendfile]
+### $${\color{blue}[sendfile]}$$
 Sends the specified file [filename_to_send] and will save as the specified file [filename_to_save].
 If the [filename_to_save] has not been specified as an argument, then the same name as the [filename_to_get] will be designated to save the file.<br />
 [buffer_size] argument may also be passed to adjust the size of the buffers to be transferred over serial; the default value is 32 bytes.<br />
-The [--forced or -f] option can be passed to over-write the existing file, please be cautious!<br />
+The [--forced or -f] option can be passed to overwrite the existing file, please be cautious!<br />
 
 Examples:<br />
 `srltool send-file [filename_to_send] [filename_to_save]`<br />
@@ -122,8 +126,9 @@ or<br />
 `srltool send-file --help`<br />
 
 ---
+### $${\color{blue}[senddir]}$$
 ### [senddir] 
-Sends the specified directory [dirname_to_send] and all its included files to the specifieddirectory [dirname_to_save].<br />
+Sends the specified directory [dirname_to_send] and all its included files to the specified directory [dirname_to_save].<br />
 If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_send] will be designated to save the folder. <br />The [--forced or -f] option can be passed to overwrite the existing folder and all its included files, please be cautious!
 
 Examples:<br />
@@ -135,7 +140,7 @@ or<br />
 `srltool send-dir --help`<br />
 
 ---
-### [recvfile]
+### $${\color{blue}[recvfile]}$$
 Receives the specified file [filename_to_get] and will save as the specified file [filename_to_save].<br />
 If the [filename_to_save] has not been specified as an argument,  then the same name as the [filename_to_get] will be designated to save the file.<br />
 [check_exist] argument may be passed to check if the file exists; the default value is True.<br />
@@ -152,7 +157,7 @@ or<br />
 `srltool recv-file --help`<br />
 
 ---
-### [recvdir]
+### $${\color{blue}[recvdir]}$$
 Receives the specified directory [dirname_to_get] and its included files and will save in the specified directory [dirname_to_save].<br />
 If the [dirname_to_save] has not been specified as an argument, then the same name as the [dirname_to_get] will be designated to save the folder. <br />
     
@@ -163,7 +168,7 @@ or<br />
 `srltool recv-dir --help`<br />
 
 ---
-### [astroid] 
+### $${\color{blue}[astroid]}$$
 Requests a list of coordinates and will plot an astroid as a serial test.<br/>
 This module was written to assess the serial connection. It requests a list of coordinates to be generated by the STM32 device and returned to be plotted.<br />
 
