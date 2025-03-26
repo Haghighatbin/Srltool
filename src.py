@@ -251,11 +251,11 @@ class SerialTool:
             raise RuntimeError
         print(resp if resp else '')
             
-    def mem_stat(self) -> str:
+    def memstat(self) -> str:
         """Returns the memory status of the device.
 
         Example:
-        srltool stat_mem
+        srltool memstat
         """
 
         cmd = f"""
@@ -276,11 +276,11 @@ class SerialTool:
         self.exit_raw_repl()
         return repr(resp)
 
-    def flash_stat(self) -> str:
+    def flashstat(self) -> str:
         """Returns details of the allocated and available flash space.
 
         Example:
-        srltool stat_flash
+        srltool flashstat
         """
 
         cmd = f"""
@@ -304,15 +304,15 @@ class SerialTool:
         return repr(resp)
 
     def overall_stat(self) -> str:
-        """ Returns the overall flash size details and memory stauts.
+        """ Returns the overall flash size details and memory status.
 
         Example:
         srltool stats
         """
 
         self.ls()
-        self.flash_stat()
-        self.mem_stat()
+        self.flashstat()
+        self.memstat()
     
     def mkdir(self, dir: str, ignore_if_exists: bool=True) -> None:
         """ Creates the specified directory.
